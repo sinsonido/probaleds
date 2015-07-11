@@ -14,15 +14,16 @@ GPIO.setup(RED_LED, GPIO.OUT)
 
 def init():
 
-    print "Args: " + sys.argv[0]
-    if sys.argv[1] == 1:
-        print "GREEN"
-        GPIO.output(GREEN_LED, True)
-        GPIO.output(RED_LED, False)
-    else:
-        print "RED"
-        GPIO.output(GREEN_LED, False)
-        GPIO.output(RED_LED, True)
+    print "Args: " + len(sys.argv)
+    if len(sys.argv) > 1
+        if sys.argv[0] == 1:
+            print "GREEN"
+            GPIO.output(GREEN_LED, True)
+            GPIO.output(RED_LED, False)
+        else:
+            print "RED"
+            GPIO.output(GREEN_LED, False)
+            GPIO.output(RED_LED, True)
 
 if __name__ == '__main__':
     try:
