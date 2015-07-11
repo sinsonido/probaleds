@@ -14,6 +14,7 @@ GPIO.setup(RED_LED, GPIO.OUT)
 
 def init():
 
+    print "Args: " + sys.argv[0]
     if sys.argv[0] == 1:
         print "GREEN"
         GPIO.output(GREEN_LED, True)
