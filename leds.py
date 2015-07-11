@@ -25,6 +25,8 @@ def init():
             GPIO.output(GREEN_LED, False)
             GPIO.output(RED_LED, True)
 
+    GPIO.cleanup()
+
 if __name__ == '__main__':
     try:
         print 'Press Ctrl-C to quit.'
