@@ -20,7 +20,7 @@ def init():
             print "GREEN"
             GPIO.output(GREEN_LED, True)
             GPIO.output(RED_LED, False)
-        else if sys.argv[1] == "RED":
+        elif sys.argv[1] == "RED":
             print "RED"
             GPIO.output(GREEN_LED, False)
             GPIO.output(RED_LED, True)
