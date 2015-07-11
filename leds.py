@@ -12,15 +12,13 @@ GPIO.setup(GREEN_LED, GPIO.OUT)
 GPIO.setup(RED_LED, GPIO.OUT)
 
 def init():
-    
-    if newmails > NEWMAIL_OFFSET:
+
+    if true:
         GPIO.output(GREEN_LED, True)
         GPIO.output(RED_LED, False)
     else:
         GPIO.output(GREEN_LED, False)
         GPIO.output(RED_LED, True)
-
-    time.sleep(MAIL_CHECK_FREQ)
 
 if __name__ == '__main__':
     try:
