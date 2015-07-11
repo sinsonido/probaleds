@@ -16,7 +16,7 @@ def init():
 
     print "Args: " + str(len(sys.argv))
     if len(sys.argv) > 1:
-        if sys.argv[0] == 1:
+        if sys.argv[1] === "GREEN":
             print "GREEN"
             GPIO.output(GREEN_LED, True)
             GPIO.output(RED_LED, False)
